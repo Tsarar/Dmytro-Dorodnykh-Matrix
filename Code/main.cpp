@@ -22,7 +22,7 @@ int main()  //example of lambda and iterators usage
     auto showLambda = [=] (std::vector<int> &row)
         {copy(row.begin(), row.end(), std::ostream_iterator<int>(std::cout, " "));  std::cout << std::endl; };   //lambda for output
 
-    std::cout << "Ranadom Matrix:\n";
+    std::cout << "Random Matrix:\n";
     for_each(Matrix.begin(), Matrix.end(), showLambda);
     std::cout << std::endl;
 
