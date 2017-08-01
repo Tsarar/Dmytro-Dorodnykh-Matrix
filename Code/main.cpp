@@ -41,8 +41,8 @@ int main()  //example of lambda and iterators usage
     for ( const auto &i : maximums ) { std::cout << i << ' '; }
     std::cout << std::endl << std::endl;
 
-    for (int k=0;k<sizeOfMatrix;k++)
-        for ( int i=0;i<sizeOfMatrix;i++)
+    for ( int i=0;i<sizeOfMatrix;i++)                    //bubble sorted
+        for (int k=0;k<sizeOfMatrix;k++)
             for ( int j=0;j<sizeOfMatrix-1;j++)
                 if (Matrix[j][i]>Matrix[j+1][i])
                     std::swap(Matrix[j][i],Matrix[j+1][i]);
